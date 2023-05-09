@@ -1,18 +1,24 @@
+import 'angular'
+import 'angular-mocks'
+
+import * as angular from 'angular'
+import * as PropTypes from 'prop-types'
+import * as React from 'react'
+
 import {
   bootstrap,
   element as $,
   IAugmentedJQuery,
   ICompileService,
-  IComponentOptions, IController,
+  IComponentOptions,
+  IController,
   IHttpService,
-  IQService, IScope,
+  IQService,
+  IScope,
   module
 } from 'angular'
-import * as angular from 'angular'
-import 'angular-mocks'
 import { $http, $q, $rootScope } from 'ngimport'
-import * as PropTypes from 'prop-types'
-import * as React from 'react'
+
 import { Simulate } from 'react-dom/test-utils'
 import { react2angular } from './'
 

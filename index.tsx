@@ -1,8 +1,9 @@
 import { IAugmentedJQuery, IComponentOptions } from 'angular'
-import fromPairs = require('lodash.frompairs')
-import NgComponent from 'ngcomponent'
-import * as React from 'react'
+import React, { PropsWithChildren } from 'react'
 import { render, unmountComponentAtNode } from 'react-dom'
+
+import fromPairs from 'lodash.frompairs'
+import NgComponent from 'ngcomponent'
 
 /**
  * Wraps a React component in Angular. Returns a new Angular component.
@@ -26,7 +27,7 @@ export function react2angular<Props>(
 
   return {
     bindings: fromPairs(names.map(_ => [_, '<'])),
-    controller: ['$element', ...injectNames, class extends NgComponent<Props> {
+    controller: ['$element', ...injectNames, class extends NgComponent<PropsWithChildren<Props>> {
       static get $$ngIsClass() {
         return true
       }
