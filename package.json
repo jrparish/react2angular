@@ -1,16 +1,18 @@
 {
   "name": "react2angular",
-  "version": "4.0.6",
+  "version": "5.0.0",
   "description": "The easiest way to embed React components in Angular 1 apps!",
-  "main": "index.js",
-  "main:esnext": "index.es2015.js",
-  "typings": "index.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "npm run clean && npm run lint && tsc -d -t es2015 && mv ./index.js ./index.es2015.js && tsc -t es5",
-    "clean": "rimraf ./*.d.ts && rimraf ./*.map",
+    "build": "yarn clean && yarn lint && tsc -p tsconfig.build.json",
+    "clean": "rimraf dist",
     "lint": "tslint --fix -p ./tsconfig.json index.tsx test.tsx",
-    "pretest": "npm run build",
-    "prepublishOnly": "npm test",
+    "pretest": "yarn build",
+    "prepublishOnly": "yarn test",
     "test": "karma start --single-run",
     "tdd": "npm-run-all -pr watch:*",
     "watch:ts": "tsc -w",
