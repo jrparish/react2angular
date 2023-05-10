@@ -36,15 +36,10 @@
   dependencies:
     "@types/angular" "*"
 
-"@types/angular@*", "@types/angular@^1.6.34", "@types/angular@^1.6.39":
-  version "1.6.53"
-  resolved "https://registry.yarnpkg.com/@types/angular/-/angular-1.6.53.tgz#0c73ce13ff245e0b9ad23bf0091f3de572d4de87"
-  integrity sha512-46op53S8hnDl9o6VOmMAXBv3laK8i2OyXOfriDwe6VRfh8wVFilIniLaNsz2pPpAM4oUwsBYFt7ZThe+IMnIeA==
-
-"@types/angular@^1.6.54":
-  version "1.6.54"
-  resolved "https://registry.yarnpkg.com/@types/angular/-/angular-1.6.54.tgz#f9d5a03e4da7b021a6dabe5d63e899ed4567a5bd"
-  integrity sha512-xA1FuozWXeRQ7FClUbvk8ePL+dydBeDoCWRPFTHU5+8uvVtIIfLGiHA8CMkwsbddFCYnTDVbLxG85a/HBx7LtA==
+"@types/angular@*", "@types/angular@^1.6.34", "@types/angular@^1.6.39", "@types/angular@^1.6.54":
+  version "1.8.5"
+  resolved "https://registry.yarnpkg.com/@types/angular/-/angular-1.8.5.tgz#71c7d3581898f1863100eeed9d25bb737a8e1062"
+  integrity sha512-tifGGLxuKOEl7Z1BoAkZKpu+eEyfZ/0Ugm5imM+D1Vj+QzuhPQS0icI34laN3CLbksyfZQPGTQa0i+jjZdpiLw==
 
 "@types/cookie@^0.4.1":
   version "0.4.1"
@@ -196,9 +191,9 @@ angular-resource@^1.7.7:
   integrity sha512-158EpvkX2K64yDdlYHaIRxY52M+xcTyvmnSXEDBl6vuMf/DBjLVheoXqXNJzKzbUSfp+rugYIUfj91VblBltPQ==
 
 angular@>=1.5, angular@>=1.5.0:
-  version "1.7.6"
-  resolved "https://registry.yarnpkg.com/angular/-/angular-1.7.6.tgz#db3bd96e3305c870f6227b9b32a4d761880473da"
-  integrity sha512-QELpvuMIe1FTGniAkRz93O6A+di0yu88niDwcdzrSqtUHNtZMgtgFS4f7W/6Gugbuwej8Kyswlmymwdp8iPCWg==
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/angular/-/angular-1.8.3.tgz#851ad75d5163c105a7e329555ef70c90aa706894"
+  integrity sha512-5qjkWIQQVsHj4Sb5TcEs4WZWpFeVFHXwxEBHUhrny41D8UrBAd6T/6nPPAsLngJCReIOqi95W3mxdveveutpZw==
 
 ansi-regex@^2.0.0:
   version "2.1.1"
