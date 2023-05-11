@@ -1,12 +1,10 @@
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
     basePath: '',
     frameworks: ['source-map-support', 'browserify', 'jasmine'],
-    files: [
-      './test.js'
-    ],
+    files: ['./src/**/*.test.js'],
     preprocessors: {
-      '*.js': ['browserify']
+      './src/**/*.test.js': ['browserify']
     },
     browserify: {
       debug: true,
@@ -28,5 +26,5 @@ module.exports = function(config) {
       terminal: true
     },
     browserDisconnectTolerance: 30
-  })
-}
+  });
+};

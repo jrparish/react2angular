@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "CommonJS",
+    "declaration": false,
+    "sourceMap": false,
+    "lib": ["dom", "es2015", "es2016.array.include"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
